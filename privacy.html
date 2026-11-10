@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Love Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap doc">
+  <header class="top"><a href="./"><span class="logo"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.6S3 15.1 3 9c0-2.8 2.2-5 4.8-5 1.8 0 3.3 1 4.2 2.5C12.9 5 14.4 4 16.2 4 18.8 4 21 6.2 21 9c0 6.1-9 11.6-9 11.6z"/></svg></span>Love Tracker</a></header>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: November 10, 2026</p>
+
+  <div class="note">
+    <b>The short version:</b> Love Tracker has no accounts and no servers of its own. Your names, dates, memories and photos are stored only on your phone. Snaps and hearts you send your partner are end-to-end encrypted before they leave your phone. If you use the free version, Google's AdMob shows ads and may use your device's advertising ID, subject to your consent.
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Love Tracker ("the app", "we") is an Android app published by an independent developer. Contact: <a href="mailto:nsabir.studios@gmail.com">nsabir.studios@gmail.com</a>.</p>
+
+  <h2>Information stored on your phone</h2>
+  <p>Everything you enter stays in the app's private storage on your device. We cannot see it, and it is never uploaded to us:</p>
+  <ul>
+    <li>Your and your partner's first names, relationship start date and (optionally) birthdays</li>
+    <li>Photos you add (profile photos, cover photo, memories) and the snaps you send or receive</li>
+    <li>Memories, wishlist items, special dates, secret plans and app settings</li>
+    <li>An optional app-lock PIN, stored only as a one-way hash</li>
+  </ul>
+  <p>If Android's built-in backup is enabled on your phone, Android may back up the app's settings and database (not photos) to your own Google account. You control this in your phone's settings. You can also create a backup file yourself from Settings → Backup &amp; restore; that file is saved wherever you choose.</p>
+
+  <h2>Snaps, hearts and partner connection</h2>
+  <p>When you connect with your partner, both phones share a random 16-character code. Snaps (photo, caption, mood), reactions, "thinking of you" hearts and a connection message containing your first name are:</p>
+  <ul>
+    <li><b>encrypted on your phone</b> with AES-256-GCM using a key derived from your shared code, so only your two phones can read them;</li>
+    <li>passed through <b>ntfy.sh</b>, a free public message relay operated by a third party, using a channel name derived from your code (the code itself is never sent);</li>
+    <li>kept by the relay for about 12 hours so your partner's phone can collect them, then deleted by the relay.</li>
+  </ul>
+  <p>The relay operator can see technical information such as your IP address and the time and size of encrypted messages, but cannot read their contents. See <a href="https://ntfy.sh/docs/privacy/">ntfy.sh's privacy policy</a>.</p>
+
+  <h2>Advertising (free version)</h2>
+  <p>If you don't have Love Tracker Plus, the app shows a small banner on some screens and can offer an optional video ad to try Plus for 24 hours. Ads are provided by <b>Google AdMob</b>, which may collect and process your device's advertising ID, IP address, approximate location derived from IP, and app interaction data to show, measure and, with your consent, personalise ads. In the European Economic Area, the UK and Switzerland, we ask for your consent using Google's consent form before personalised ads are shown; you can change your choice any time in Settings → Ad privacy choices. You can also reset or delete your advertising ID in your phone's settings. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</p>
+
+  <h2>Purchases</h2>
+  <p>Love Tracker Plus is purchased through <b>Google Play</b>. Google processes your payment; we never receive your payment details. The app only asks Google Play whether your account owns Plus.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>We don't require an account, email or phone number.</li>
+    <li>We don't run analytics or crash-reporting services.</li>
+    <li>We don't sell your data, and we don't have access to your content.</li>
+    <li>We don't access your contacts, location or full photo library. When you choose a photo, Android's photo picker shares only the photo you pick.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td>Internet / network state</td><td>Send and receive encrypted snaps and hearts; load ads; check purchases</td></tr>
+    <tr><td>Notifications</td><td>Tell you when your partner sends a snap or heart, and remind you about special dates (you can turn these off)</td></tr>
+    <tr><td>Advertising ID (free version)</td><td>Used by Google AdMob as described above</td></tr>
+  </table>
+  <p>Taking a photo uses your phone's own camera app; Love Tracker does not request camera permission.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Because your data lives on your phone, you're in control: delete a snap or memory in the app, use Settings → Start over to erase everything, or uninstall the app. Messages on the relay expire automatically within about 12 hours. Deleting a snap on your phone doesn't delete the copy on your partner's phone.</p>
+
+  <h2>Children</h2>
+  <p>Love Tracker is intended for people aged 13 and over (or the minimum age of digital consent in your country) and is not directed to children. We don't knowingly collect information from children.</p>
+
+  <h2>Security</h2>
+  <p>Content sent between phones is end-to-end encrypted. Data on your phone is protected by Android's app sandbox; you can add an app lock PIN. No method of storage or transmission is perfectly secure, so please keep your pairing code private.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we'll update this page and the date above. Significant changes will be mentioned in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:nsabir.studios@gmail.com">nsabir.studios@gmail.com</a></p>
+
+  <footer><a href="./">Home</a><a href="terms.html">Terms of use</a></footer>
+</div>
+</body>
+</html>

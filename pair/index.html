@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Join me on Love Tracker</title>
+  <meta property="og:title" content="Join me on Love Tracker">
+  <meta property="og:description" content="Tap to connect our phones and send each other snaps.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="wrap center">
+    <section class="hero">
+      <span class="logo" style="width:72px;height:72px;border-radius:22px;margin:0 auto 20px"><svg viewBox="0 0 24 24" fill="#fff" style="width:38px;height:38px"><path d="M12 20.6S3 15.1 3 9c0-2.8 2.2-5 4.8-5 1.8 0 3.3 1 4.2 2.5C12.9 5 14.4 4 16.2 4 18.8 4 21 6.2 21 9c0 6.1-9 11.6-9 11.6z"/></svg></span>
+      <h1>You've been invited</h1>
+      <p>Your partner wants to connect with you on Love Tracker, so your snaps and hearts reach each other's phones.</p>
+      <p><a id="open" class="btn" href="#">Open in Love Tracker</a></p>
+      <p style="margin-top:12px"><a class="btn secondary" href="https://play.google.com/store/apps/details?id=com.naeemsabir.lovetracker">Don't have it? Get it free</a></p>
+      <div id="manual" style="margin-top:28px">
+        <p>Or, in the app, go to <b>Connect → Their code</b> and enter:</p>
+        <div class="code" id="code">—</div>
+      </div>
+    </section>
+    <p style="color:var(--muted);font-size:.9rem">The code is only in this link's address and is never sent to this website's server.</p>
+  </div>
+  <script>
+    // The code lives in the #fragment, which browsers never send to the server.
+    var raw = (location.hash || "").replace("#", "").toUpperCase().replace(/[^0-9A-Z]/g, "");
+    var pkg = "com.naeemsabir.lovetracker";
+    var store = "https://play.google.com/store/apps/details?id=" + pkg;
+    var open = document.getElementById("open");
+    if (raw.length === 16) {
+      document.getElementById("code").textContent = raw.match(/.{1,4}/g).join("-");
+      open.href = "intent://pair/" + raw + "#Intent;scheme=lovetracker;package=" + pkg +
+        ";S.browser_fallback_url=" + encodeURIComponent(store) + ";end";
+    } else {
+      document.getElementById("manual").style.display = "none";
+      open.href = store;
+      open.textContent = "Get Love Tracker";
+    }
+  </script>
+</body>
+</html>
