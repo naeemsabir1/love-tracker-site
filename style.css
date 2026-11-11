@@ -58,3 +58,6 @@ footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9r
 footer a { color: var(--muted); margin-right: 16px; }
 .center { text-align: center; }
 .code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 1.3rem; letter-spacing: 0.08em; background: var(--surface); border-radius: 16px; padding: 14px 18px; display: inline-block; margin: 12px 0; word-break: break-all; }
+.shots { display: flex; gap: 14px; overflow-x: auto; padding: 8px 2px 18px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.shots img { flex: 0 0 auto; width: min(44vw, 200px); height: auto; border-radius: 18px; scroll-snap-align: start; box-shadow: 0 10px 24px rgba(91, 11, 34, 0.12); }
+main h2 { font-size: 1.8rem; margin: 40px 0 0; }
