@@ -11,10 +11,10 @@
 <div class="wrap doc">
   <header class="top"><a href="./"><span class="logo"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.6S3 15.1 3 9c0-2.8 2.2-5 4.8-5 1.8 0 3.3 1 4.2 2.5C12.9 5 14.4 4 16.2 4 18.8 4 21 6.2 21 9c0 6.1-9 11.6-9 11.6z"/></svg></span>Love Tracker</a></header>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: November 11, 2026</p>
+  <p class="updated">Last updated: November 12, 2026</p>
 
   <div class="note">
-    <b>The short version:</b> Love Tracker has no accounts and no servers of its own. Your names, dates, memories and photos are stored only on your phone. Snaps and hearts you send your partner are end-to-end encrypted before they leave your phone. If you use the free version, Google's AdMob shows ads and may use your device's advertising ID, subject to your consent.
+    <b>The short version:</b> Love Tracker has no accounts and no servers of its own. Your names, dates, memories and photos are stored only on your phone. Snaps and hearts you send your partner are end-to-end encrypted before they leave your phone. There are no ads, no analytics and no tracking.
   </div>
 
   <h2>Who we are</h2>
@@ -25,13 +25,13 @@
   <ul>
     <li>Your and your partner's first names, relationship start date and (optionally) birthdays</li>
     <li>Photos you add (profile photos, cover photo, memories) and the snaps you send or receive</li>
-    <li>Memories, wishlist items, special dates, secret plans and app settings</li>
+    <li>Memories, bucket-list items, special dates, secret plans and app settings</li>
     <li>An optional app-lock PIN, stored only as a one-way hash</li>
   </ul>
   <p>If Android's built-in backup is enabled on your phone, Android may back up the app's settings and database (not photos) to your own Google account. You control this in your phone's settings. You can also create a backup file yourself from Settings → Backup &amp; restore; that file is saved wherever you choose.</p>
 
   <h2>Snaps, hearts and partner connection</h2>
-  <p>When you connect with your partner, both phones share a random 16-character code. Snaps (photo, caption, mood), reactions, "thinking of you" hearts, your answers to the daily question and a connection message containing your first name are:</p>
+  <p>When you connect with your partner, both phones share a random 16-character code. Snaps (photo, caption, mood), reactions, "thinking of you" hearts, shared bucket-list items, and a profile card that lets your partner join (both first names, your start date, and birthdays if you added them) are:</p>
   <ul>
     <li><b>encrypted on your phone</b> with AES-256-GCM using a key derived from your shared code, so only your two phones can read them;</li>
     <li>passed through <b>ntfy.sh</b>, a free public message relay operated by a third party, using a channel name derived from your code (the code itself is never sent);</li>
@@ -39,11 +39,11 @@
   </ul>
   <p>The relay operator can see technical information such as your IP address and the time and size of encrypted messages, but cannot read their contents. See <a href="https://ntfy.sh/docs/privacy/">ntfy.sh's privacy policy</a>.</p>
 
-  <h2>Advertising (free version)</h2>
-  <p>If you don't have Love Tracker Plus, the app shows one small banner on two screens (never full-screen or video ads). Every new user gets Plus free for their first 14 days, with no ads. Ads are provided by <b>Google AdMob</b>, which may collect and process your device's advertising ID, IP address, approximate location derived from IP, and app interaction data to show, measure and, with your consent, personalise ads. In the European Economic Area, the UK and Switzerland, we ask for your consent using Google's consent form before personalised ads are shown; you can change your choice any time in Settings → Ad privacy choices. You can also reset or delete your advertising ID in your phone's settings. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</p>
+  <h2>Advertising</h2>
+  <p>Love Tracker contains no ads and no advertising or analytics SDKs, and does not use your device's advertising ID.</p>
 
   <h2>Purchases</h2>
-  <p>Love Tracker Plus is available as a yearly subscription or a one-time purchase through <b>Google Play</b>. The 14-day free trial is given inside the app and needs no payment details. Google processes your payment; we never receive your payment details. The app only asks Google Play whether your account owns Plus.</p>
+  <p>Love Tracker Plus is a monthly subscription sold through <b>Google Play</b>, with a 14-day free trial for new subscribers. Google processes your payment and reminds you before the trial ends; we never receive your payment details. The app only asks Google Play whether your account has an active subscription.</p>
 
   <h2>What we don't do</h2>
   <ul>
@@ -56,9 +56,8 @@
   <h2>Permissions</h2>
   <table>
     <tr><th>Permission</th><th>Why</th></tr>
-    <tr><td>Internet / network state</td><td>Send and receive encrypted snaps and hearts; load ads; check purchases</td></tr>
+    <tr><td>Internet / network state</td><td>Send and receive encrypted snaps, hearts and bucket-list items; check your subscription</td></tr>
     <tr><td>Notifications</td><td>Tell you when your partner sends a snap or heart, and remind you about special dates (you can turn these off)</td></tr>
-    <tr><td>Advertising ID (free version)</td><td>Used by Google AdMob as described above</td></tr>
   </table>
   <p>Taking a photo uses your phone's own camera app; Love Tracker does not request camera permission.</p>
 
